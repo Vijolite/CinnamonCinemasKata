@@ -1,22 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemasService", "CinemasService\CinemasService.csproj", "{749AC4E1-FCE7-4FC5-A188-8C74FD6BA96D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemasService", "CinemasService\CinemasService.csproj", "{749AC4E1-FCE7-4FC5-A188-8C74FD6BA96D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemasServices.Tests", "CinemasServices.Tests\CinemasServices.Tests.csproj", "{F22E5DF1-B46F-461F-9273-ED6E63EC12CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{749AC4E1-FCE7-4FC5-A188-8C74FD6BA96D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{749AC4E1-FCE7-4FC5-A188-8C74FD6BA96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{749AC4E1-FCE7-4FC5-A188-8C74FD6BA96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{749AC4E1-FCE7-4FC5-A188-8C74FD6BA96D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F22E5DF1-B46F-461F-9273-ED6E63EC12CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22E5DF1-B46F-461F-9273-ED6E63EC12CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22E5DF1-B46F-461F-9273-ED6E63EC12CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22E5DF1-B46F-461F-9273-ED6E63EC12CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C7A59CB-2A19-47B9-A9FA-DF9ACBB921E6}
 	EndGlobalSection
 EndGlobal
