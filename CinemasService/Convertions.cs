@@ -7,11 +7,21 @@ namespace CinemasService
         {
             int number = letter;
             int numberForA = 'A';
-            return number - numberForA + 1;
+            return number - numberForA;
         }
         public static int ConvertSeatNumber(int number)
         {
             return number - 1;
+        }
+        public static char ConvertRowLetterBackToHuman(int number)
+        {
+            int numberForA = 'A';
+            char letter = (char)(number + numberForA);
+            return letter;
+        }
+        public static int ConvertSeatNumberBackToHuman(int number)
+        {
+            return number + 1;
         }
 
     }

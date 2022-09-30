@@ -8,9 +8,9 @@ namespace CinemasServices.Tests
     public class ConvertionsTests
     {
 
-        [TestCase("A", 1)]
-        [TestCase("B", 2)]
-        [TestCase("C", 3)]
+        [TestCase("A", 0)]
+        [TestCase("B", 1)]
+        [TestCase("C", 2)]
         public void TestConvertRowLetter(char initial, int result)
         {
             Convertions.ConvertRowLetter(initial).Should().Be(result);
@@ -21,6 +21,13 @@ namespace CinemasServices.Tests
         public void TestConvertSeatNumber(int initial, int result)
         {
             Convertions.ConvertSeatNumber(initial).Should().Be(result);
+        }
+        [TestCase(0, "A")]
+        [TestCase(1, "B")]
+        [TestCase(2, "C")]
+        public void TestConvertRowLetterBackToHuman(int initial, char result)
+        {
+            Convertions.ConvertRowLetterBackToHuman(initial).Should().Be(result);
         }
 
     }
