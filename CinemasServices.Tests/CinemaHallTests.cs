@@ -20,13 +20,24 @@ namespace CinemasServices.Tests
             var cinema = new CinemaHall();
             cinema.Rows.Length.Should().Be(3);
         }
-        [TestCase("A", 1)]
-        [TestCase("B", 2)]
-        [TestCase("C", 3)]
-        public void TestConvertRowLetter(char initial, int result)
+        [TestMethod]
+        public void TestFindFirstEmptySeat()
         {
-            cinema.ConvertRowLetter(initial).Should().Be(result);
+            var cinema = new CinemaHall();
+            var firstEmpty = cinema.FirstEmptySeat();
+            $"{firstEmpty.X} {firstEmpty.Y}".Should().Be("0 0");
         }
+        [TestCase(0, 0, 0, 1)]
+        [TestCase(0, 1, 0, 2)]
+        [TestCase(0, 2, 0, 3)]
+        public void TestFindNextEmptySeat(int initialX, int initialY, int resultX, int resultY)
+        {
+            var cinema = new CinemaHall();
+            var seat = new Seat(initialX, initialY);
+            var firstEmpty = cinema.NextEmptySeat(seat);
+            $"{firstEmpty.X} {firstEmpty.Y}".Should().Be($"{resultX} {resultY}");
+        }
+
 
     }
 }
