@@ -30,12 +30,20 @@ namespace CinemasServices.Tests
         [TestCase(0, 0, 0, 1)]
         [TestCase(0, 1, 0, 2)]
         [TestCase(0, 2, 0, 3)]
+        [TestCase(0, 4, 1, 0)]
         public void TestFindNextEmptySeat(int initialX, int initialY, int resultX, int resultY)
         {
             var cinema = new CinemaHall();
             var seat = new Seat(initialX, initialY);
             var firstEmpty = cinema.NextEmptySeat(seat);
             $"{firstEmpty.X} {firstEmpty.Y}".Should().Be($"{resultX} {resultY}");
+        }
+        [TestMethod]
+        public void TestAllocateSeatsInEmptyCinema()
+        {
+            var cinema = new CinemaHall();
+            cinema.AllocateSeats(3);
+            $"{cinema.Rows[0].Seats[0].IsEmpty} {cinema.Rows[0].Seats[1].IsEmpty} {cinema.Rows[0].Seats[2].IsEmpty}".Should().Be("False False False");
         }
 
 
