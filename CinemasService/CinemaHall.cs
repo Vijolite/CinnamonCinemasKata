@@ -11,7 +11,7 @@ namespace CinemasService
 {
     public class CinemaHall
     {
-        private const int NUMBER_OF_ROWS = 3;
+        public const int NUMBER_OF_ROWS = 3;
         
         public Row[] Rows;
 

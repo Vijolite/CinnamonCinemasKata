@@ -11,6 +11,7 @@ namespace CinemasService
             while (cinema.SeatsCouldBeAllocated(numberOfSeats))
             {
                 cinema.AllocateSeats(numberOfSeats);
+                Output.PrintAllSeats(cinema);
             }
             
         }
