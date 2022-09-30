@@ -62,8 +62,10 @@ namespace CinemasService
                 else seat = NextEmptySeat(seat);
                 seat.Allocate();
             }
-            
-
+        }
+        public int NumberOfEmptySeats()
+        {
+            return Rows.SelectMany(row => row.Seats).Where(seat => seat.IsEmpty).Count();
         }
     }
 }

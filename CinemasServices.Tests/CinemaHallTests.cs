@@ -45,7 +45,18 @@ namespace CinemasServices.Tests
             cinema.AllocateSeats(3);
             $"{cinema.Rows[0].Seats[0].IsEmpty} {cinema.Rows[0].Seats[1].IsEmpty} {cinema.Rows[0].Seats[2].IsEmpty}".Should().Be("False False False");
         }
-
-
+        [TestMethod]
+        public void TestNumberOfEmptySeats()
+        {
+            var cinema = new CinemaHall();
+            cinema.AllocateSeats(3);
+            cinema.NumberOfEmptySeats().Should().Be(12);
+        }
+        [TestMethod]
+        public void TestNumberOfEmptySeatsInEmptyCinema()
+        {
+            var cinema = new CinemaHall();
+            cinema.NumberOfEmptySeats().Should().Be(15);
+        }
     }
 }
