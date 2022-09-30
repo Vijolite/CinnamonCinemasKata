@@ -15,6 +15,10 @@ namespace CinemasService
         {
             Seats = new Seat [NUMBER_OF_SEATS];
         }
+        public int ConvertSeatNumber(int number)
+        {
+            return number - 1;
+        }
 
     }
 }

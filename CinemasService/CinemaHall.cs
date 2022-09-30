@@ -9,15 +9,18 @@ namespace CinemasService
     public class CinemaHall
     {
         private const int NUMBER_OF_ROWS = 3;
-        private enum Letters { A, B, C, NUMBER_OF_ROWS }
+        //private enum Letters { A, B, C, NUMBER_OF_ROWS }
         public Row[] Rows;
 
-        //myItemArray[(int)ITEM_2];
-
-        
         public CinemaHall ()
         {
-            Rows = new Row [(int)NUMBER_OF_ROWS];
+            Rows = new Row [NUMBER_OF_ROWS];
+        }
+        public int ConvertRowLetter(char letter)
+        {
+            int number = letter;
+            int numberForA = 'A';
+            return number - numberForA + 1;
         }
 
     }
