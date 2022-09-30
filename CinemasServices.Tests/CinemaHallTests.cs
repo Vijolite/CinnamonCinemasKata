@@ -58,5 +58,13 @@ namespace CinemasServices.Tests
             var cinema = new CinemaHall();
             cinema.NumberOfEmptySeats().Should().Be(15);
         }
+        [TestCase(5, true)]
+        [TestCase(13, false)]
+        public void TestSeatCouldBeAllocated(int numberToAllocate, bool result)
+        {
+            var cinema = new CinemaHall();
+            cinema.AllocateSeats(3);
+            cinema.SeatsCouldBeAllocated(numberToAllocate).Should().Be(result);
+        }
     }
 }

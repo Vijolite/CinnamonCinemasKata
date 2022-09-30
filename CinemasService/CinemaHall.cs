@@ -67,5 +67,9 @@ namespace CinemasService
         {
             return Rows.SelectMany(row => row.Seats).Where(seat => seat.IsEmpty).Count();
         }
+        public bool SeatsCouldBeAllocated(int number)
+        {
+            return number <= NumberOfEmptySeats();
+        }
     }
 }
