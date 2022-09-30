@@ -15,6 +15,7 @@ namespace CinemasService
                 Console.WriteLine();
             }
             Console.WriteLine();
+            Console.ReadLine();
         }
 
 

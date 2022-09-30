@@ -5,7 +5,7 @@
         public static int GenerateRandomNumberOfSeats()
         {
             Random rnd = new Random();
-            int x = rnd.Next(3) + 1;
+            int x = rnd.Next(1,4);
             return x;
         }
     }

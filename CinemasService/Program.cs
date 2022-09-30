@@ -12,6 +12,7 @@ namespace CinemasService
             {
                 cinema.AllocateSeats(numberOfSeats);
                 Output.PrintAllSeats(cinema);
+                numberOfSeats = UserInterface.GenerateRandomNumberOfSeats();
             }
             
         }
