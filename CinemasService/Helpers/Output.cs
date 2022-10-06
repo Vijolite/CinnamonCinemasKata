@@ -1,6 +1,7 @@
 ﻿using System;
+using CinemasService.Models;
 
-namespace CinemasService
+namespace CinemasService.Helpers
 {
     public static class Output
     {

@@ -1,13 +1,11 @@
-﻿
-
-namespace CinemasService
+﻿namespace CinemasService.Models
 {
     public class Seat
     {
         public bool IsEmpty { get; set; }
         public int X { get; set; }
         public int Y { get; set; }
-        public Seat ()
+        public Seat()
         {
             IsEmpty = true;
         }

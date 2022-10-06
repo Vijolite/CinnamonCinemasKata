@@ -1,5 +1,4 @@
-﻿
-namespace CinemasService
+﻿namespace CinemasService.Helpers
 {
     public static class Convertions
     {

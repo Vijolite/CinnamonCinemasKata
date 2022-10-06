@@ -1,4 +1,6 @@
-﻿using CinemasCervice;
+﻿using CinemasService.Helpers;
+using CinemasService.UI;
+using CinemasService.Models;
 
 namespace CinemasService
 {

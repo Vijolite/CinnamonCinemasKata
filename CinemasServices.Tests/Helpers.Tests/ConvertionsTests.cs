@@ -1,8 +1,9 @@
 using FluentAssertions;
 using NUnit.Framework;
 using CinemasService;
+using CinemasService.Helpers;
 
-namespace CinemasServices.Tests
+namespace CinemasServices.Tests.Helpers.Tests
 {
     [TestClass]
     public class ConvertionsTests

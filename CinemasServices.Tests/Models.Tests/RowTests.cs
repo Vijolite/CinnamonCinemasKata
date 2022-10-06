@@ -1,8 +1,8 @@
 using FluentAssertions;
 using NUnit.Framework;
-using CinemasService;
+using CinemasService.Models;
 
-namespace CinemasServices.Tests
+namespace CinemasServices.Tests.Models.Tests
 {
     [TestClass]
     public class RowTests
