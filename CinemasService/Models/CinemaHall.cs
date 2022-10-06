@@ -31,17 +31,15 @@ namespace CinemasService.Models
         }
         public Seat FirstEmptySeat()
         {
-            bool found = false;
-            int i = 0;
-            int j = 0;
-            for (i = 0; i < NUMBER_OF_ROWS && !found; i++)
+            for (int i = 0; i < NUMBER_OF_ROWS; i++)
             {
-                for (j = 0; j < Row.NUMBER_OF_SEATS && !found; j++)
+                for (int j = 0; j < Row.NUMBER_OF_SEATS; j++)
                 {
-                    if (Rows[i].Seats[j].IsEmpty) found = true;
+                    if (Rows[i].Seats[j].IsEmpty) return Rows[i].Seats[j];
                 }
             }
-            return Rows[i - 1].Seats[j - 1];
+            return null;
+            
         }
         public Seat NextEmptySeat(Seat seat)
         {

@@ -12,7 +12,7 @@
         {
             return number - 1;
         }
-        public static char ConvertRowLetterBackToHuman(int number)
+        public static char ConvertRowNumberBackToHuman(int number)
         {
             int numberForA = 'A';
             char letter = (char)(number + numberForA);

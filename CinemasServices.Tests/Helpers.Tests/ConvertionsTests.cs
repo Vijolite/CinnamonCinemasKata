@@ -28,7 +28,7 @@ namespace CinemasServices.Tests.Helpers.Tests
         [TestCase(2, "C")]
         public void TestConvertRowLetterBackToHuman(int initial, char result)
         {
-            Convertions.ConvertRowLetterBackToHuman(initial).Should().Be(result);
+            Convertions.ConvertRowNumberBackToHuman(initial).Should().Be(result);
         }
 
     }
